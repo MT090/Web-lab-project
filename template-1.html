@@ -730,4 +730,15 @@ nav ul li a {
       <div class="contact-background"></div>
   </section>
 
-</body></html>
+  <script>
+    document.querySelectorAll('.see-project').forEach((button, index) => {
+      button.addEventListener('click', () => {
+        
+        window.location.href = `project${index + 1}.html`;
+      });
+    });
+  </script>
+  
+
+</body>
+</html>
